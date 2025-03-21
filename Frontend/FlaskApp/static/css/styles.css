@@ -1,0 +1,107 @@
+body {
+  background-color: #2c2f33;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  background-color: #1f2326;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+
+.form-control-lg {
+  height: 150px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn {
+  background-color: #7289da;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5f73bc;
+}
+
+.output {
+  background-color: #1f2326;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  white-space: pre-line;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.options {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #1f2326;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.options h3 {
+  margin-top: 0;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.options input[type="range"] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.options input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .options {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
